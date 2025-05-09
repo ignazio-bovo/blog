@@ -2,6 +2,22 @@
 <html lang="{{ page.lang | default: "en" }}">
   {%- include head.html -%}
   <body a="{{ site.theme_config.appearance | default: "auto" }}">
+    <!-- Add JetBrains Mono font -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Apply fixed-width font to all text -->
+    <style>
+      body, p, h1, h2, h3, h4, h5, h6, li, td, th, blockquote, pre, 
+      code, a, span, div, input, button, textarea, select, label {
+        font-family: 'JetBrains Mono', Consolas, Monaco, 'Andale Mono', monospace !important;
+      }
+      
+      /* Ensure code blocks also use the same font */
+      pre, code {
+        font-family: 'JetBrains Mono', Consolas, Monaco, 'Andale Mono', monospace !important;
+      }
+    </style>
+    
     <main class="page-content" aria-label="Content">
       <div class="w">
         {{ content }}
