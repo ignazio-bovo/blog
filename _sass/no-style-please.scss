@@ -40,6 +40,11 @@ body {
   overflow-wrap: break-word;
 }
 
+/* Apply fixed-width font to all text elements */
+p, h1, h2, h3, h4, h5, h6, li, td, th, blockquote, pre, label, input, textarea, select, button {
+  font-family: 'JetBrains Mono', monospace;
+}
+
 .post-meta { text-align: right; }
 
 h2, h3, h4, h5, h6 { margin-top: 3rem; }
