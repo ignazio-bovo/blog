@@ -20,6 +20,9 @@ body[a="dark"] { @include dark-appearance; }
 }
 // -------------------------------------------- //
 
+/* Import a nice fixed-width web font */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+
 // bg color is also needed in html in order to
 // block body's background propagation
 // see: https://stackoverflow.com/a/61265706
@@ -29,7 +32,7 @@ html { height: 100%; scroll-behavior: smooth; }
 
 body {
   color: black;
-  font-family: monospace;
+  font-family: 'JetBrains Mono', monospace;
   font-size: 16px;
   line-height: 1.4;
   margin: 0;
@@ -48,6 +51,17 @@ p { margin: 1rem 0; }
 li { margin: 0.4rem 0; }
 
 *:target { background: yellow; }
+
+/* Style links to be bold and underlined */
+a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: #0066cc;
+}
+
+a:hover {
+  color: #004080;
+}
 
 .w {
   max-width: 640px;
@@ -74,6 +88,7 @@ table, th, td {
 code {
   color: white;
   background: black;
+  font-family: 'JetBrains Mono', monospace;
 }
 
 div.highlighter-rouge code {
